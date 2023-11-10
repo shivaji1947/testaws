@@ -1,0 +1,13 @@
+name: test the git push wf
+on: push
+jobs:
+  builds:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: run sample code github actions
+      run: echo " this workflow run successfull for this particular actions"
+
+    - name: stimulating error
+      run: echo " checking the error": exit1
+      
