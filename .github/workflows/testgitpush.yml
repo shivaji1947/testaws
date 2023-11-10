@@ -9,5 +9,5 @@ jobs:
       run: echo " this workflow run successfull for this particular actions"
 
     - name: stimulating error
-      run: echo " checking the error": exit1
+      run: echo " checking the error";
       
